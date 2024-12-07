@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread("image1.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("image.jpg", cv2.IMREAD_GRAYSCALE)
 fourier = cv2.dft(np.float32(image), flags=cv2.DFT_COMPLEX_OUTPUT)
 
 magnitude = np.fft.fftshift(np.log(cv2.magnitude(fourier[:, :, 0], fourier[:, :, 1]) + 1))

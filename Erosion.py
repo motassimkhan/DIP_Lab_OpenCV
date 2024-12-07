@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 # Load image in grayscale
-img = cv2.imread("pop.jpg",cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("img.jpg",cv2.IMREAD_GRAYSCALE)
 # Thresholding
 _, binary = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
 # Define kernel and apply erosion

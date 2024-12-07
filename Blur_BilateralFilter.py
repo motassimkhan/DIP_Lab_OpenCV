@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("image1.png")
+img = cv2.imread("image1.jpg")
 imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 Bil_Img5 = cv2.bilateralFilter(imgRGB, 5, 75, 75)
 k5_blur = cv2.blur(imgRGB, (5, 5))
